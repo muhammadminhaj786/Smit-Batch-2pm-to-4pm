@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Form</h1>
+    <form>
+        <fieldset >
+            <legend>Smit</legend>
+            <p>Name</p>
+            <input name="username" required placeholder="Enter Your Name" type="text" maxlength="240" />
+            <p>Phone number</p>
+            <input name="contact" required placeholder="Enter Your Name" type="number" />
+            <p>password</p>
+            <input required placeholder="Enter Your Name" type="password" minlength="4" />
+            <br>
+          <p>
+            Enter Email
+            <input type="email" placeholder="Enter Your Email">
+          </p>
+        
+        <br>
+        <textarea placeholder="Your Comments" rows="2" cols="40"></textarea>
+        <br>
+
+        <!-- ye mene gender ka radio button banaya he -->
+        <!-- COMMENT-->
+        <P>
+            courses
+
+            <br>
+            <label for="courses">
+                <input value="html" type="radio" name="courses">html
+                <input value="CSS" type="radio" name="courses">CSS
+                <input value="JS" type="radio">js
+            </label>
+        </P>
+        <br>
+        <br>
+
+        <p>Hobbies</p>
+        <input type="checkbox" checked value="sleeping">Sleeping
+        <input type="checkbox" checked value="coding">coding
+        <input type="checkbox" value="runing">runing
+        <br>
+        <br>
+
+        <select name="countries">
+            <option selected value="countries">Countries</option>
+            <option value="pakistan">Pakistan</option>
+            <option value="India">India</option>
+            <option value="bangladesh">Bangladesh</option>
+        </select>
+
+        <br><br>
+
+        <p>select a file</p>
+        <input type="file">
+        <br>
+        <br>
+
+       <input type="date">set a date of brth
+       <br><br>
+       <input type="search">
+       <br><br>
+
+        <button>submit</button>
+
+
+    </form>
+</fieldset>
+</body>
+
+</html>
