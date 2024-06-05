@@ -1,0 +1,113 @@
+p {
+    color: blue;
+}
+
+#box1 {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+#para1 {
+    background-color: blue;
+    color: white;
+}
+
+/* #box2{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+}
+
+#box3 {
+    height: 100px;
+    width: 100px;
+    background-color: red; 
+} */
+
+/* .head1 {
+    color: greenyellow;
+
+} */
+
+/* web structure */
+#navbar {
+    height: 50px;
+    background-color: grey;
+    /* width: 500px; */
+    width: 97%;
+
+}
+
+#banner {
+    height: 500px;
+    width: 90%;
+    background-color: blueviolet;
+}
+
+#box {
+    height: 150px;
+    width: 150px;
+    background-color: green;
+    border: 2px black solid;
+   
+}
+
+#box4 {
+    height: 150px;
+    width: 150px;
+    background-color: yellow;
+}
+
+.text {
+    color: white;
+}
+
+/* body {
+    border: 2px solid red;
+} */
+
+/* #outer-box {
+        display: flex;
+} */
+
+#box8 {
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+}
+
+#box9 {
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+}
+#box8 {
+    background-color: black;
+    height: 200px;
+    width: 200px;
+}
+#box10 {
+    background-color: green;
+    height: 200px;
+    width: 200px;
+}
+#box11 {
+    background-color: yellow;
+    height: 200px;
+    width: 200px;
+}
+#box12 {
+    background-color: brown;
+    height: 200px;
+    width: 200px;
+}
+
+#boxx {
+    display: flex;
+}
+
+#main-head{
+    font-size: 50px;
+    color: green;
+    text-align: center;
+}
