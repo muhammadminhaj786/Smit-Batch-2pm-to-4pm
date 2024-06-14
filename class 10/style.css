@@ -1,0 +1,15 @@
+.box > p > b {
+    color: red;
+}
+
+#third {
+    text-shadow: 1px 1px 1px red;
+}
+#box2 {
+    width: 100px;
+    border: 2px solid black;
+    height: 100px;
+   
+
+}
+

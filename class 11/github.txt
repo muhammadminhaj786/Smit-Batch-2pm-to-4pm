@@ -1,0 +1,9 @@
+git download
+create repo
+make a folder then right click chose a option git bash here
+git init
+git add .
+git commit -m "first"
+git branch -M main
+git remote add origin link
+git push -u origin main
