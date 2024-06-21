@@ -63,4 +63,20 @@ input {
     height: 60px;
     border: none;
     border-bottom: 2px solid black;
+    
+}
+#parent {
+    height: 200px;
+    width: 300px;
+    border: 2px solid red;
+}
+.container1 {
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    margin-top: 50px;
+    /* margin-left: 70px; */
+    padding-top: 40px;
+    padding-left: 40px;
+    
 }

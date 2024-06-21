@@ -1,0 +1,24 @@
+*{
+    margin: 0px;
+}
+
+.para1 {
+    border: 2px solid black;
+    padding: 10px 10px 20px 20px;
+    margin-top: 10px;
+}
+
+.img-div {
+    padding-top: 20px;
+    border: 1px solid green;
+    width: 40%;
+    /* margin: 0px auto; */
+    margin: 10px auto;
+}
+
+#img1 {
+    height: 100%;
+    width: 100%;
+    border: 2px solid red;
+    /* margin-top: 20px; */
+}
