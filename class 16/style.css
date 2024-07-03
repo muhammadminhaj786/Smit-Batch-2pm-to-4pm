@@ -1,0 +1,55 @@
+#back-img {
+    height: 180px;
+    width: 280px;
+    border: 2px solid black;
+    background-image: url('../../1.jpg');
+    /* background-position: center; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: red;
+}
+
+.inp {
+    height: 50px;
+    width: 300px;
+    border-radius: 10px;
+    border: none ;
+    border: 1px solid black;
+    padding-left: 50px;
+    background-image: url('../../sea.png');
+    background-repeat: no-repeat;
+    
+    background-size: contain;
+}
+
+.div-inp {
+    border: 1px solid red;
+    gap: 20px;
+    width:70%;
+   margin: 0px auto;
+}
+
+#inp2 {
+    margin-left: 20px;
+}
+
+
+.div1 {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+   
+}
+
+p {
+    margin: 20px;
+    border: 2px solid red;
+}
+
+.div-i {
+    background-image: url('../../1.jpg');
+    height: 300px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-size: 100px;
+}
