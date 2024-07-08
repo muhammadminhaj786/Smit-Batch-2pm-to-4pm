@@ -1,0 +1,63 @@
+.box1 {
+    height: 300px;
+    width: 300px;
+    /* min-width: 200px; */
+    /* max-width: 800px; */
+    border: 1px solid black;
+}
+
+#btn1 {
+    height: 50px;
+    width: 120px;
+    border: none;
+    border-radius: 5px;
+    background-color: aquamarine;
+    
+}
+
+#btn1:hover {
+    /* transition: width 4s, 1s; */
+    transition-delay: 3s;
+    background-color: aqua;
+    color: white;
+    width: 140px;
+}
+
+#box2 {
+    height: 100px;
+    width: 100px;
+    border: 2px solid red;
+    background-color: red;
+    border-radius: 50%;
+    
+}
+
+#box2:hover{
+    transition: 3s;
+   transform: rotate(360deg);
+   /* border-radius: 50%; */
+   color: white;
+}
+
+
+.box {
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+    
+}
+
+
+.box3{
+    height: 100px;
+    width: 300px;
+}
+.box4{
+    background-color: green;
+}
+
+p{
+    font-family: "Ga Maamli", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}

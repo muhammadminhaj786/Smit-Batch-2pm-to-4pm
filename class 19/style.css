@@ -1,0 +1,65 @@
+.parent {
+    height: 2000px;
+    width: 80%;
+    border: 3px solid purple;
+    margin: 50px auto;
+    /* position: relative; */
+}
+
+.box {
+    height: 300px;
+    width: 600px;
+    border: 1px solid black;
+}
+
+#box1 {
+    background-color: aqua;
+    /* position: absolute;
+    top: 10px;
+    left: 5px; */
+    position: sticky;
+    top: 0;
+
+  
+}
+
+#box2 {
+    background-color: red;
+    position: absolute;
+    top: 500px;
+}
+
+#box3 {
+    /* height: 80px;
+    width: 80px;
+    border-radius: 50%; */
+    /* width: 100%; */
+    background-color: blue;
+    /* position: relative;
+    top: 30px;
+    left: 50px; */
+    /* position: fixed;
+    border: none;
+    left: 80%;
+    top: 80%; */
+}
+
+#box4 {
+    background-color: yellow;
+    /* height: 200px;
+    width: 200px; */
+    /* border-radius: 50%; */
+    /* position: relative; */
+    /* top: 30px; */
+    /* left: 30px; */
+}
+
+#box5 {
+    background-color: pink;
+    position: fixed;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    top: 80%;
+    left: 80%;
+}
