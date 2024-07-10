@@ -1,0 +1,90 @@
+/* .box{
+    height: 80px;
+    width: 100%;
+    background-color: aqua;
+    position: sticky;
+    top: 0;
+}
+
+.img {
+    height: 250px;
+    width: 250px;
+}
+
+#img2 {
+    position: absolute;
+    left: 50px;
+}
+
+ */
+
+ * {
+    margin: 0;
+    padding: 0;
+ }
+
+ .parent {
+    height: 100vh;
+    border: 3px solid black;
+    display: flex;
+ }
+
+ .leftbar {
+    height: 100%;
+    width: 25%;
+    background-color: aqua;
+ }
+ .rightbar {
+    height: 100%;
+    width: 75%;
+    border: 3px solid purple;
+    position: relative;
+ }
+
+ .nav {
+    height: 80px;
+    width: 100%;
+    background-color: grey;
+ }
+
+ .cover {
+    height: 300px;
+    width: 100%;
+    background-color: blue ;
+ }
+
+ .box {
+    height: 600px;
+    width: 90%;
+    border: 3px solid red;
+    margin-left: 70px;
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 270px;
+ }
+
+ .card1 {
+    height: 100%;
+    width: 25%;
+    background-color: hotpink;
+ }
+ 
+ .card2 {
+    height: 100%;
+    width: 70%;
+    border: 3px solid green;
+ }
+
+ .img {
+   height: 250px;
+   width: 100%;
+   background-color: blanchedalmond;
+ }
+
+ .bill {
+   height: 75%;
+   width: 75%;
+   border-radius: 50%;
+   padding-left: 30px;
+ }
