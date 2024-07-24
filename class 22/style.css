@@ -1,0 +1,48 @@
+.box {
+    height: 500px;
+    width: 500px;
+    /* background-color: darkgoldenrod; */
+    border: 2px solid black;
+}
+
+
+
+
+@media only screen and (max-width: 515px) {
+    .box {
+        height: 500px;
+        width: 100%;
+        border: 2px solid red;
+        background-color: blueviolet;
+
+    }
+    .box p {
+        font-size: 0.8rem;
+    }
+}
+
+
+@media only screen and (max-width: 325px) {
+    .box {
+        height: 500px;
+        width: 100%;
+        border: 2px solid red;
+        background-color: green;
+    }
+    .box p {
+        font-size: 0.7rem;
+    }
+}
+
+
+.box2 {
+    height: 500px;
+    max-width: 500px;
+    border: 2px solid black;
+    background-color: yellow;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
