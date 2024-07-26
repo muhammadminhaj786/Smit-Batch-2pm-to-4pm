@@ -1,0 +1,80 @@
+/* .box {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}
+
+p{
+    font-size: 10px;
+    color: aqua;
+} */
+
+body {
+    background: #3494E6;  /* fallback for old browsers */
+/* background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);  Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.box1 {
+    height: 100px; width: 100px; background-color: green; 
+    animation-name: topToBottom;
+    /* animation-name: leftToRight; */
+    animation-duration: 4s;
+    
+    animation-iteration-count: 1;
+    animation-direction: forwards;
+    animation-timing-function: ease-in;
+    /* animation-timing-function: steps(5, end); */
+    animation-play-state: running;
+    position: relative;
+    
+    
+}
+
+
+@keyframes topToBottom {
+    from{
+        height: 100px;
+    }
+    to {
+        height: 500px;
+        opacity: 0.2;
+    }
+}
+
+@keyframes leftToRight {
+    0%{
+        /* width: 50px; */
+        /* left: 50px; */
+        background-color: green;
+        right: 90%;
+    }
+    50% {
+        /* width: 600px; */
+        left: 200px;
+    }
+    100% {
+        /* width: 600px; */
+        /* left: 90%; */
+        right: 0%;
+    }
+
+}
+
+.my-btn {
+    height: 60px;
+    width: 140px;
+    background-color: red;
+    border: none;
+    border-radius: 20px;
+    color: black;
+
+}
+
+.my-btn:hover {
+    background-color: green;
+    transition: 3s;
+    color: white;
+}
+
