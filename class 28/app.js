@@ -1,17 +1,17 @@
 //condition
 
 //login logic
-// var myPass = 123123
-// var password = +prompt("Enter Password")
-// console.log(typeof(password))
+var myPass = 123123
+var password = +prompt("Enter Password")
+console.log(typeof(password))
 
 
-// console.log("line 5")
-// if (myPass === password) {
-//     alert("Successfully Login")
-// }else {
-//     alert("incorrect password")
-// }
+console.log("line 5")
+if (myPass === password) {
+    alert("Successfully Login")
+}else {
+    alert("incorrect password")
+}
 
 // alert("incorrect password")
 
@@ -72,5 +72,5 @@ else {
 // console.log(3 !== "3")
 
 
-// and operator &&   
-// or operator  || 
+// and operator &&   // dono condition true ho  
+// or operator  ||   
