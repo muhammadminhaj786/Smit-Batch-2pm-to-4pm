@@ -54,3 +54,6 @@ if (age <= 13 ) {
 else {
     alert("you're adult")
 }
+
+
+alert('hi')
