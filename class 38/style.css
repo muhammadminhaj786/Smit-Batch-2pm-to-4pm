@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent {
+    border: 2px solid red;
+    height: 100vh;
+}
+
+.header {
+    height: 120px;
+    width: 80%;
+    border: 2px solid green;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links {
+    width: 50%;
+    border: 2px solid blue;
+}
+.logo {
+    width: 10%;
+    border: 2px solid yellow;
+    margin-left: 90%;
+   
+}
+.logo1 {
+    width: 100px;
+    height: 56px;
+    margin: 0 auto;
+}
+.logo1 img{
+    height: 100%;
+    width: 100%;
+}
+.bg {
+    background-image: url("../../n.webp");
+}
