@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.fb-section{
+    width: 100%;
+    height: 100vh;
+    background: #F0F2F5;
+}
+.fb-section .container{
+    /* border: 1px solid red; */
+    width: 85%;
+   margin: 0 auto;
+   padding-top: 130px;
+}
+.fb-info{
+    /* border: 1px solid red; */
+    float: left;
+    width: 47%;
+    padding: 1rem;
+}
+.fb-info h5{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: black;
+    margin-left: 1.5rem;
+    margin-top: -.5rem;
+}
+.fb-info img{
+    width: 320px;
+    /* border: 1px solid red; */
+
+}
+.form{
+    /* border: 1px solid red; */
+    float: right;
+    width: 49%;
+    background: transparent;
+}
+.form .main{
+    background: #fff;
+    width: 400px;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.form .main input{
+    width: 100%;
+    padding: 13px;
+    font-size:16px;
+    font-weight: 500;
+    color: #90949C;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,.2);
+}
+.form .main .login{
+    width: 100%;
+    padding: 13px;
+    font-size:18px;
+    font-weight: 700;
+    color: #fff;
+    /* margin: 10px 0; */
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,.2);
+    background: #1877F2;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.form .main .forget{
+    margin: 16px 0;
+    text-align: center;
+}
+.form .main .forget a{
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    color: #1877F2;
+}
+.creat-button {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+.creat-button button{
+    width: 60%;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: #42B72A;
+    border: 1px solid rgba(0,0,0,.1);
+    cursor: pointer;
+}
+.foter{
+    text-align: center;
+    /* border: 1px solid red; */
+    width: 400px;
+    padding: 1rem;
+}
+.foter p{
+    font-size: 12px;
+     font-weight: 500; 
+     cursor: pointer; 
+     color: black; 
+     /* margin-top: 1rem;  */
+     /* text-align: center; */
+}
