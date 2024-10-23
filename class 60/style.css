@@ -1,0 +1,12 @@
+.hidden{
+    display: none;
+}
+
+.visible{
+    display: block;
+}
+
+.car{
+    height: 250px;
+    width: 250px;
+}
