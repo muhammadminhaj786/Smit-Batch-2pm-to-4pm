@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cantainer">
+       
+        <div>
+            <input  id="inp" type="text" placeholder="0">
+        </div>
+        <div class="first">
+            <button onclick="allClear()"  class="btn1">Ac</button>
+            <button  class="btn2">Del</button>
+        </div>
+        <hr>
+        <div>
+            <button onclick="setANumber('7')" >7</button>
+            <button onclick="setANumber('8')">8</button>
+            <button onclick="setANumber('9')">9</button>
+            <button onclick="setANumber('*')"  class="op">x</button>
+        </div>
+        <div>
+            <button onclick="setANumber('4')" >4</button>
+            <button onclick="setANumber('5')" >5</button>
+            <button onclick="setANumber('6')" >6</button>
+            <button onclick="setANumber('/')"  class="op">/</button>
+        </div>
+        <div>
+            <button onclick="setANumber('1')" >1</button>
+            <button onclick="setANumber('2')" >2</button>
+            <button onclick="setANumber('3')" >3</button>
+            <button onclick="setANumber('+')"  class="op">+</button>
+        </div>
+        <div>
+            <button onclick="setANumber('0')" >0</button>
+            <button onclick="setANumber('.')" >.</button>
+            <button onclick="setANumber('-')" class="op" >-</button>
+            <button onclick="calc()"  class="op" >=</button>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
