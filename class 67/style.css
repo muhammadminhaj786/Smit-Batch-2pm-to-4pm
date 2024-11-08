@@ -1,0 +1,37 @@
+.box{
+    height: 100px;
+    width: 100px;
+    /* border: 2px solid black; */
+}
+
+.column{
+    display: flex;
+}
+
+#box1{
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+
+#box3{
+    border-left: 2px solid black;
+}
+
+#box5{
+    border: 2px solid black;
+}
+#box6{
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+#box7{
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+}
+#box8{
+    border-right: 2px solid black;
+}
+
+.disabled{
+    pointer-events: none;
+}
