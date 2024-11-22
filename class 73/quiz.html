@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="formwarpper p-[10px] mx-auto mt-[10%] border-2 border-black w-[50%] h-[400px]">
+            <div class="form ">
+                <input id="name" class="w-[100%]  rounded-[10px] border-2 border-black h-[60px] mt-3" type="text"
+                    placeholder="Enter Name">
+                <input id="email" class="w-[100%] rounded-[10px] border-2 border-black h-[60px] mt-3" type="text"
+                    placeholder="Enter Email">
+                <input id="rollno" class="w-[100%] rounded-[10px]  border-2 border-black h-[60px] mt-3" type="text"
+                    placeholder="Enter Roll No">
+                <input id="institute" class="w-[100%] rounded-[10px] border-2 border-black h-[60px] mt-3" type="text"
+                    placeholder="Enter Institute">
+                <div class=" w-[80px] mx-auto mt-[20px]">
+                    <button onclick="startQuiz()"
+                        class="border-2 border-[green] h-[40px] w-[100%] rounded-[12px] hover:bg-[green] hover:text-[white]">submit</button>
+                </div>
+            </div>
+            <div class="hidden main-div">
+                <div class="quiz-body  ">
+                    <div class="info-div h-[100px] border-2 border-black">
+                        <div class="flex justify-between mt-2">
+                            <h1 class="set-name font-bold">Minhaj</h1>
+                            <h1 class="set-email font-bold">mminhaj@gmail.com</h1>
+                        </div>
+                        <div class="flex justify-between mt-3">
+                            <h1 class="set-rollno font-bold">rollNo</h1>
+                            <h1 class="set-institute font-bold">Smit</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="quiz-div p-4 mt-4">
+                    <h3 class="border-2 border-zinc-300 p-4 font-bold" id="ques">
+                        what is your name?
+                    </h3>
+                    <ul id="quesOptions" class="p-2 ">
+                        <li> programming language</li>
+                        <li> Assembly language</li>
+                        <li> High level language</li>
+                        <li> scripted language</li>
+                    </ul>
+                </div>
+                <div class="footer ">
+                    <button id="btn" onclick="nextQues()" class="border-2 border-[green] h-[40px] w-[100%] rounded-[12px] hover:bg-[green] hover:text-[white]">Next</button>
+                </div>
+            </div>
+            <div class="result hidden">
+                <p>Total Questions :<span id="tQues">10</span></p> 
+                <p>Correct Answer :<span id="cAns">5</span></p> 
+                <p>Wrong Answer: <span id="wAns">5</span></p>   
+                <p>Total Number :  <span id="tNum">50</span> </p> 
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="quiz.js"></script>
+
+</html>
