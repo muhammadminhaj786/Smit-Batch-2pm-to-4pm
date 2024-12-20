@@ -1,0 +1,7 @@
+step 1 :download and install node js
+step 2 :install type script
+npm install -g typescript
+step 3 :create app.ts
+step 4 :compile
+tsc app.ts
+tsc --watch app.ts
