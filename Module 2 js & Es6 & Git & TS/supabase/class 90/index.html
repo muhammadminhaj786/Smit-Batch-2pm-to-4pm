@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <div class="container">
+        <div class="form-container">
+            <div id="signup-form" class="">
+                <h1>SignUp</h1>
+                <form >
+                    <input id="signup-email" type="text" placeholder="Enter Email">
+                    <input id="signup-password" type="password" placeholder="Enter Password"><br>
+                    <button type="button"  id="signup-btn">Signup</button>
+                    <p>
+                        Already have an account? <span id="switchLogin" >Login</span>
+                    </p>
+                </form>
+            </div>
+            <div id="login-form" class="hidden">
+                <h1>Login</h1>
+                <form >
+                    <input id="login-email" type="text" placeholder="Enter Email">
+                    <input id="login-password" type="password" placeholder="Enter Password"><br>
+                    <button  id="login-btn">Login</button>
+                    <p>
+                        Don't have an account? <span id="switchSignUp">signup</span>
+                    </p>
+                </form>
+            </div>
+        </div>
+   </div>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script src="app.js"></script>
+</html>
