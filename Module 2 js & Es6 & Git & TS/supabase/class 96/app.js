@@ -1,8 +1,7 @@
 // import { createClient } from "/node-modules/@supabase/supabase-js";
 
 const supabaseUrl = "https://mfipdkqnaupvkkivwafp.supabase.co";
-const supabaseKey =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1maXBka3FuYXVwdmtraXZ3YWZwIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTczNjkzMjc3NSwiZXhwIjoyMDUyNTA4Nzc1fQ.IVv8ssGXtTh5hw29CBAUHVddxnRPyC6s4eNqS0bCTmc";
+
 const supabaseClient = supabase.createClient(supabaseUrl, supabaseKey);
 // console.log(supabaseClient)
 
