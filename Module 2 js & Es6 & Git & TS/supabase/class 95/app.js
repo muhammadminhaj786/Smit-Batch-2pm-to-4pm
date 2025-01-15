@@ -1,6 +1,6 @@
 
 const supabaseUrl = "https://xfkawxjrcqzuwptcmoya.supabase.co"
-const supabasKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inhma2F3eGpyY3F6dXdwdGNtb3lhIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTczNjE1NTI3NiwiZXhwIjoyMDUxNzMxMjc2fQ.Mt9HomAEXyfAym9xn9vqjwcsDnuIEr7ITLe-2isKZtc"
+
 const supabaseClient = supabase.createClient(supabaseUrl, supabasKey)
 
 
