@@ -2,7 +2,7 @@
 
 // Create a single supabase client for interacting with your database
 const supabaseUrl = 'https://xfkawxjrcqzuwptcmoya.supabase.co'
-const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inhma2F3eGpyY3F6dXdwdGNtb3lhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzYxNTUyNzYsImV4cCI6MjA1MTczMTI3Nn0.80an0HWZefSYR8b-eW9zOiEUY8af6dEfFpeg5tkz7X0"
+
 const supabaseClient = supabase.createClient(supabaseUrl, supabaseKey)
 
 

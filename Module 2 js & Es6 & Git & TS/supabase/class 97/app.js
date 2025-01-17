@@ -72,18 +72,40 @@ async function signIn(){
   const email = emailSignin.value
   const password = passSignin.value
 
-  const { data, error } = await supabaseClient.auth.signInWithPassword({
+  const {data , error} = await supabaseClient.auth.signInWithPassword({
     email: email,
     password: password,
   })
 
-  if(!error){
-    alert('Login Successfully')
-    window.location.href= '/buyer.html'
- 
+  console.log(data)
+
+
+  if(error){
+    alert('login failed')
+    console.log(error)
+    return
   }
 
-  console.log(error)
-  console.log(data)
+  console.log(data.user.id)
+
+  const { data: tableData, error: tableError } = await supabaseClient
+  .from('users')
+  .select()
+  .eq('uid', data.user.id)
+  .single()
+
+  console.log(tableData.role)
+
+  if(tableData.role === 'buyer'){
+    window.location.href = '/buyer.html'
+  }else if(tableData.role === 'vendor'){
+    window.location.href = '/vendor.html'
+  }else{
+    alert('no role match')
+  }
+
+  
+
+
   
 }
