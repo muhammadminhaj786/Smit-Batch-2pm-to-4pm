@@ -1,0 +1,15 @@
+
+CREATE POLICY "allow_all_uploads"
+ON storage.objects
+AS PERMISSIVE
+FOR INSERT
+TO PUBLIC
+WITH CHECK (true);
+
+
+CREATE POLICY "allow_all_select"
+ON storage.objects
+AS PERMISSIVE
+FOR SELECT
+TO PUBLIC
+USING (true);
