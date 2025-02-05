@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="my-nav bg-dark">
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-info" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link active text-info" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-info" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-info" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu text-info">
+                  <li><a class="dropdown-item text-info" href="#">Action</a></li>
+                  <li><a class="dropdown-item text-info" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+          
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+  </div>
+  <!-- <div class="my-pro my-margin container">
+    <form>
+        <div class="row mb-3">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Title</label>
+          <div class="col-sm-10">
+            <input placeholder="Enter a title" type="text" class="form-control" id="title">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="inputPassword3" class="col-sm-2 col-form-label"></label>
+          <div class="col-sm-10">
+            <textarea rows="10" class="w-100" id="desc">
+            </textarea>
+          </div>
+          <div class="row mb-3">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Price</label>
+            <div class="col-sm-10">
+              <input placeholder="Enter a Price" type="text" class="form-control" id="price">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label  class="col-sm-2 col-form-label">Image</label>
+            <div class="col-sm-10">
+              <input type="file" accept="images/*" id="imageInp">
+            </div>
+          </div>
+        </div>
+
+        <button onclick="addProduct()" type="button" class="btn btn-primary">Add Product</button>
+      </form>
+  </div>
+  <div class="container mt-5">
+    
+      <div class="my-cards row">
+
+      </div>
+  
+  </div> -->
+
+  <div class="container mt-5">
+    <button type="button" onclick="clearFields()" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Add product
+    </button>
+    <div class="my-cards row mb-3 mt-5">
+
+ 
+
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Title</label>
+          <div class="col-sm-10">
+            <input placeholder="Enter a title" type="text" class="form-control" id="title">
+          </div>
+          <label for="inputPassword3" class="col-sm-2 col-form-label">Description</label>
+          <div class="col-sm-10">
+            <textarea  rows="2" class="w-100 form-control" id="desc">
+            </textarea>
+          </div>
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Price</label>
+          <div class="col-sm-10">
+            <input placeholder="Enter a Price" type="text" class="form-control" id="price">
+          </div>
+          <label  class="col-sm-2 col-form-label">Image</label>
+          <div class="col-sm-10">
+            <input class="form-control" type="file" accept="images/*" id="imageInp">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button"  class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button id="listProduct" onclick="addProduct()" type="button" class="btn btn-primary">List Product</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+  integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="vendor.js"></script>
+</html>

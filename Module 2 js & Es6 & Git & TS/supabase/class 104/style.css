@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.my-margin{
+    margin-top: 180px;
+}
+
+.hidden{
+    display: none;
+}
+
+.my-height{
+    height: 300px;
+}
+
+.confirm-btn{
+    margin-top: 6px;
+    height: 60px;
+    width: 80%;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255, 166, 0, 0.671);
+    color: white;
+    font-size: 1.2rem;
+
+}
+
+.confirm-btn:hover{
+    background-color: rgb(255, 166, 0);
+}
