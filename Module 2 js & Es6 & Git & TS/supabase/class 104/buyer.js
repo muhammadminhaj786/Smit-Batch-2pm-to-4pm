@@ -1,3 +1,4 @@
+const supabaseUrl = "https://jfgvfybsnnlfsvrjffrj.supabase.co";
 
 
 const parentDiv = document.querySelector(".my-cards");

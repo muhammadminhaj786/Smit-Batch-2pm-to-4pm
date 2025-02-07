@@ -1,5 +1,4 @@
 
-const supabaseUrl = "https://jfgvfybsnnlfsvrjffrj.supabase.co";
 
 const tBody = document.getElementById("tBody");
 

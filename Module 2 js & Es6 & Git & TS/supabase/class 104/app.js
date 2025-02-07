@@ -1,7 +1,5 @@
 // import { createClient } from "/node-modules/@supabase/supabase-js";
-
 const supabaseUrl = "https://jfgvfybsnnlfsvrjffrj.supabase.co";
-const supabaseClient = supabase.createClient(supabaseUrl, "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpmZ3ZmeWJzbm5sZnN2cmpmZnJqIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTczNzUzNzE5NCwiZXhwIjoyMDUzMTEzMTk0fQ.S1kNW5B8l3BiI4xbROOwPEoJcvstvpBMZyI317HyLWw")
 
 
 const emailInp = document.getElementById("inputEmail4");

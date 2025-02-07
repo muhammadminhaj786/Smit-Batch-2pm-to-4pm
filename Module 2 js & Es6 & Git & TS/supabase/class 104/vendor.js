@@ -11,20 +11,20 @@ const productModal = new bootstrap.Modal(
 console.log(productModal);
 let editProductId = null;
 const listProduct = document.getElementById("listProduct");
-// const uidKey = JSON.parse(localStorage.getItem('sb-jfgvfybsnnlfsvrjffrj-auth-token'))
-// const uid = uidKey.user.id
-// console.log(uid)
+const uidKey = JSON.parse(localStorage.getItem('sb-jfgvfybsnnlfsvrjffrj-auth-token'))
+const uid = uidKey.user.id
+console.log(uid)
 
 
 
-async function getUser() {
+// async function getUser() {
    
-  const userid = localStorage.setItem('uid', user.id)
-  const uid = localStorage.getItem('uid')
+//   const userid = localStorage.setItem('uid', user.id)
+//   const uid = localStorage.getItem('uid')
 
-}
+// }
 
-getUser();
+// getUser();
 
 
 

@@ -1,7 +1,6 @@
 
 
 
-
 const prodID = localStorage.getItem('prodID')
 console.log(prodID)
 const ID = JSON.parse(localStorage.getItem('sb-jfgvfybsnnlfsvrjffrj-auth-token'))
