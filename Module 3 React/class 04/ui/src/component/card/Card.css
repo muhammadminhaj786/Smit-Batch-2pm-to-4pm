@@ -1,0 +1,39 @@
+.card {
+    height: 420px;
+    width: 250px;
+    border: 2px solid black;
+}
+
+.img{
+    width: 100%;
+}
+
+.price{
+    color: red;
+}
+
+.ctn{
+    padding: 8px;
+}
+
+.btn{
+    width: 120px;
+    height: 40px;
+    border: none;
+    background-color: greenyellow;
+    color: white;
+    border-radius: 8px;
+
+}
+
+.btnDiv{
+
+    width: 120px;
+    margin: 0 auto;
+}
+
+.divCtn{
+    display: flex;
+    justify-content: space-around;
+    
+}
