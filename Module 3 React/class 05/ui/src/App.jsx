@@ -2,19 +2,18 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { Card } from './component/card/Card'
-
+import { Parent } from './component/Parent'
+import { Child1 } from './component/Child1'
 
 function App() {
-
-  console.log('app')
+  
 
   return (
     <div>
-     <Card />
+      <Parent />
+
     </div>
   )
-
 }
 
 export default App

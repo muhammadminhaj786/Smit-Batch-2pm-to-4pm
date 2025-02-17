@@ -17,6 +17,9 @@ export function Card(){
         
         setCount(++count)
         console.log('chala', count)
+        return (
+            count
+        )
     }
 
     function updateName (){
@@ -49,3 +52,5 @@ export function Card(){
         </div>
     )
 }
+
+
