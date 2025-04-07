@@ -1,0 +1,20 @@
+project setup 
+component
+state
+props
+routing
+useEffect
+fetching data
+
+
+custom hook
+useRef
+useMemo
+dynamic routing
+controller and uncontroller component
+closures
+redux 
+context api
+
+formik yup
+tanstack
