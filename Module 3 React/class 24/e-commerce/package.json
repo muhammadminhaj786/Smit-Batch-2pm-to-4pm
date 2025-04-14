@@ -10,9 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@heroui/button": "^2.2.17",
+    "@heroui/input": "^2.4.17",
+    "@heroui/system": "^2.4.13",
+    "@heroui/theme": "^2.4.13",
     "axios": "^1.8.4",
+    "framer-motion": "^12.6.5",
     "react": "^19.1.0",
-    "react-dom": "^19.0.0",
+    "react-dom": "^19.1.0",
     "react-router-dom": "^7.5.0",
     "router-dom": "^3.0.3"
   },
