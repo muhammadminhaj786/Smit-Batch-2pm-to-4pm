@@ -1,0 +1,22 @@
+create react app
+component
+component composition
+props
+state management (use State)
+life cycle (useEffect)
+api calling axios
+map (list)
+hook 
+custom hook
+routes 
+tailwind mui heroui 
+deployment vercel
+
+
+-----------------
+redux (redux toolkit)
+context api
+formik yup
+usecall back and useMemo , useRef
+dynamic route
+props types
