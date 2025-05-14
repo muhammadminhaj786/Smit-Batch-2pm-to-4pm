@@ -19,6 +19,7 @@ function App() {
      
       {count}
       <button onClick={()=>dispatch(add())}>add</button>
+      <CountChild />
     </div>
   )
 }

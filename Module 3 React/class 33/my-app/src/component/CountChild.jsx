@@ -1,13 +1,16 @@
 import React, { useState } from 'react'
+import { useDispatch } from 'react-redux'
+import { add } from '../redux/counterSlice'
 
 const CountChild = () => {
 
     let [count, setCount] = useState(0)
+    const dispatch = useDispatch()
 
-    function add() {
-        console.log("add")
-        setCount(++count)
-    }
+    // function add() {
+    //     console.log("add")
+    //     setCount(++count)
+    // }
 
     function less() {
         console.log("less")
@@ -23,7 +26,7 @@ const CountChild = () => {
           }
         </div>
         <div>
-          <button onClick={add}>add</button>
+          <button onClick={()=> dispatch(add())}>add</button>
           <button onClick={less}>less</button>
         </div>
       </div>
