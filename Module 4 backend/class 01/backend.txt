@@ -1,0 +1,26 @@
+node app initillize
+create server
+create simple response
+connect mongodb
+model schema
+restful api
+create crud api
+authentication jwt
+image uploading
+connect cloudinary
+deployment
+post man
+middleware
+route
+params
+cors
+pagination sorting
+folder structure
+file readings
+aggregation
+indexing
+integrate third party 
+gemini api
+socket.io
+payment integration
+bruting force
