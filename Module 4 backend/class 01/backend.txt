@@ -4,6 +4,9 @@ create simple response
 connect mongodb
 model schema
 restful api
+params
+cors
+route
 create crud api
 authentication jwt
 image uploading
@@ -11,9 +14,6 @@ connect cloudinary
 deployment
 post man
 middleware
-route
-params
-cors
 pagination sorting
 folder structure
 file readings
