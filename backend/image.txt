@@ -1,0 +1,5 @@
+
+
+npm i multer
+npm i cloudinary
+npm i multer-storage-cloudinary --legacy-peer-deps
