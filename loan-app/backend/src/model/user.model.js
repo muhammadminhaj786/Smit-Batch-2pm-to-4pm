@@ -23,6 +23,10 @@ const userSchema = new Schema({
     type: String,
     required: true,
   },
+  userType: {
+    type: String,
+    default: 'user'
+  }
 });
 
 const User = model("Auth", userSchema);

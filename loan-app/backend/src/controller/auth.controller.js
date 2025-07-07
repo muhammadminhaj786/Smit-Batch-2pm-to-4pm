@@ -11,7 +11,7 @@ export const createUser = async (req, res) => {
     }
 
     const userData = await User.create(req.body);
-    let token = jwt.sign({ id: userExist._id }, process.env.JWT_SECRET, {
+    let token = jwt.sign({ id: userData._id }, process.env.JWT_SECRET, {
       expiresIn: "1h",
     });
     res.status(201).json({

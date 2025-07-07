@@ -17,6 +17,7 @@ const Signup = () => {
     profileImage: '',
 
   });
+  const [imageFile, setImageFile] = useState(null)
 
   const navigate = useNavigate()
 
@@ -28,11 +29,35 @@ const Signup = () => {
     }));
   };
 
+
+  const handleImageChange = (e) => {
+    // console.log('run')
+    console.log(e.target.files[0])
+    setImageFile(e.target.files[0])
+  }
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
 
-    const response = await axios.post('http://localhost:8080/api/register', formData)
+
+    let imageurl = ''
+
+    const imageData = new FormData()
+    imageData.append('image',imageFile )
+
+    const res = await axios.post('http://localhost:8080/upload',imageData)
+    console.log(res)
+
+    imageurl = res.data.imageUrl
+
+    const sendData = ({
+      ...formData,
+      profileImage: imageurl
+    })
+
+
+    const response = await axios.post('http://localhost:8080/api/register',sendData )
     console.log(response)
     if (response.status == 201) {
       navigate('/signin')
@@ -40,7 +65,7 @@ const Signup = () => {
 
   };
 
-  const navigateToSignIn = ()=> {
+  const navigateToSignIn = () => {
     navigate('/signin')
   }
 
@@ -106,8 +131,9 @@ const Signup = () => {
 
         <div>
           <input
+            onChange={handleImageChange}
             type="file"
-            accept='image/png'
+            accept='image/*'
             className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-3 border"
           />
         </div>

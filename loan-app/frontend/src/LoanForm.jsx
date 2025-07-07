@@ -16,7 +16,7 @@ const LoanForm = () => {
     address: '',
     city: '',
     state: '',
-    pincode: '',
+    
     agreeTerms: false
   });
 
@@ -269,22 +269,7 @@ const LoanForm = () => {
                   </select>
                 </div>
 
-                <div>
-                  <label htmlFor="pincode" className="block text-sm font-medium text-gray-700 mb-1">
-                    Pincode <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    id="pincode"
-                    name="pincode"
-                    value={formData.pincode}
-                    onChange={handleChange}
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-3 border"
-                    pattern="[0-9]{6}"
-                    maxLength="6"
-                    required
-                  />
-                </div>
+            
               </div>
             </div>
 
@@ -328,23 +313,7 @@ const LoanForm = () => {
                   />
                 </div>
 
-                <div>
-                  <label htmlFor="panNumber" className="block text-sm font-medium text-gray-700 mb-1">
-                    PAN Number <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    id="panNumber"
-                    name="panNumber"
-                    value={formData.panNumber}
-                    onChange={handleChange}
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-3 border uppercase"
-                    pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}"
-                    maxLength="10"
-                    placeholder="ABCDE1234F"
-                    required
-                  />
-                </div>
+                
 
                 <div>
                   <label htmlFor="aadhaarNumber" className="block text-sm font-medium text-gray-700 mb-1">
@@ -357,10 +326,10 @@ const LoanForm = () => {
                     value={formData.aadhaarNumber}
                     onChange={handleChange}
                     className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-3 border"
-                    pattern="[0-9]{12}"
+                    
                     maxLength="12"
                     placeholder="123456789012"
-                    required
+                    
                   />
                 </div>
               </div>

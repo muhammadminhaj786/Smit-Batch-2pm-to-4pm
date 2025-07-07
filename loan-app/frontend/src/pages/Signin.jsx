@@ -32,8 +32,11 @@ const Signin = () => {
 
     const response = await axios.post('http://localhost:8080/api/login', formData)
     .then((res)=>{
+      console.log(res.data.userExist)
       console.log(res.data.token)
       localStorage.setItem('token', res.data.token)
+      localStorage.setItem('user', JSON.stringify(res.data.userExist));
+
       navigate('/')
     })
     .catch((error)=> {
@@ -43,6 +46,10 @@ const Signin = () => {
     })
     
   };
+
+  const navigateToSignUp = ()=> {
+    navigate('/signup')
+  }
 
 
   return (
@@ -73,9 +80,12 @@ const Signin = () => {
           />
         </div>
 
+       <div className='flex justify-between w-[90%] mx-auto'>
+        <p  >do'nt have an account <span className='text-green-600 font-bold underline underline-offset-4' onClick={navigateToSignUp}>SignIn</span></p>
         {
           error && <p className='text-red-600 font-bold'>{error}</p>
         }
+       </div>
 
     
 
