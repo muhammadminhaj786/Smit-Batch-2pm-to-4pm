@@ -1,0 +1,14 @@
+
+
+backend.
+express 
+mongoose
+nodemon
+cors
+bcryptjs
+json web token
+multer
+cloudinary
+multer-storage-cloudinary
+dotenv
+nodemailor

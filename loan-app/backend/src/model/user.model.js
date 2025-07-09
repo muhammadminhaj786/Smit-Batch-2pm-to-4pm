@@ -26,7 +26,14 @@ const userSchema = new Schema({
   userType: {
     type: String,
     default: 'user'
-  }
+  },
+  otp: {
+    type:String
+  },
+  isActive:{
+    type: Boolean,
+    default:  false
+  } 
 });
 
 const User = model("Auth", userSchema);
