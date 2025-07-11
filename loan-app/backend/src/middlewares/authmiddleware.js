@@ -1,14 +1,20 @@
+import jwt from "jsonwebtoken";
 
+export const authVerify = (req, res, next) => {
+  const authHeader = req.headers.authorization;
+  const token = authHeader.split(" ")[1]
+  console.log(token)
 
+  jwt.verify(token, process.env.JWT_SECRET, (err, user) => {
+    if (err) {
+      return res.status(401).json({
+        message: "unauthorized user",
+      });
+    }
 
-// export const authMiddleware =  (req,res,next)=> {
+    req.user = user
+    next()
+  });
 
-
-//     const token = req.headers.authorization
-//     console.log(token)
-
-//     const actualToken = 
-
-//     next()
-
-// }
+  // next()
+};

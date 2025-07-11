@@ -1,6 +1,6 @@
 import User from "../model/user.model.js";
 import jwt from "jsonwebtoken";
-import nodemailer from "nodemailer"
+import nodemailer from "nodemailer";
 export const createUser = async (req, res) => {
   try {
     const { email } = req.body;
@@ -11,31 +11,27 @@ export const createUser = async (req, res) => {
       });
     }
 
-    const otp = Math.floor(Math.random() * 9000) + 1000
-    
-    const sendToObj = {
-      ... req.body,
-      otp
+    const otp = Math.floor(Math.random() * 9000) + 1000;
 
-    }
+    const sendToObj = {
+      ...req.body,
+      otp,
+    };
 
     const userData = await User.create(sendToObj);
     let token = jwt.sign({ id: userData._id }, process.env.JWT_SECRET, {
       expiresIn: "1h",
     });
 
-  
-    
-
     const trasnporter = nodemailer.createTransport({
       service: "Gmail",
       auth: {
         user: "eb20103087.minhajwahid@gmail.com",
-        pass: "yrvornwwvsyhzmrf"
-      }
-    })
+        pass: "yrvornwwvsyhzmrf",
+      },
+    });
 
-    const mailOption ={
+    const mailOption = {
       from: "eb20103087.minhajwahid@gmail.com",
       to: email,
       subject: "Your OTP Code",
@@ -49,17 +45,15 @@ export const createUser = async (req, res) => {
           <br>
           <p>Regards,<br>Team</p>
         </div>
-      `
+      `,
     };
-    
 
-
-    await trasnporter.sendMail(mailOption)
+    await trasnporter.sendMail(mailOption);
 
     res.status(201).json({
       message: "User created",
       userData,
-      token
+      token,
     });
   } catch (error) {
     return res.status(500).json({
@@ -80,24 +74,21 @@ export const loginUser = async (req, res) => {
         });
       }
 
-      if(!userExist.isActive){
+      if (!userExist.isActive) {
         return res.status(401).json({
-          message: "Please verify your email"
-        })
+          message: "Please verify your email",
+        });
       }
-  
+
       let token = jwt.sign({ id: userExist._id }, process.env.JWT_SECRET, {
         expiresIn: "1h",
       });
       res.status(200).json({
         message: "Login Successfull",
         userExist,
-        token
+        token,
       });
     }
-
-   
-
 
     res.status(401).json({
       message: "user credentials are wrong",
@@ -109,63 +100,68 @@ export const loginUser = async (req, res) => {
   }
 };
 
-
-export const verifyOtp = async (req,res)=> {
+export const verifyOtp = async (req, res) => {
   try {
+    const { email, otp } = req.body;
 
-    const {email, otp}= req.body
+    const userExist = await User.findOne({ email });
 
-    const userExist = await User.findOne({email})
+    console.log(userExist);
 
-    console.log(userExist)
-    
-
-    if(userExist.otp != otp){
+    if (userExist.otp != otp) {
       return res.status(401).json({
-        message: "wrong otp"
-      })
-
-      
+        message: "wrong otp",
+      });
     }
 
+    userExist.isActive = true;
 
-
-    userExist.isActive = true
-
-    await userExist.save()
+    await userExist.save();
 
     return res.status(201).json({
-      message: "Email verified successfully"
-    })
-    
+      message: "Email verified successfully",
+    });
   } catch (error) {
     return res.status(500).json({
       message: "An error occurred while verify otp",
-      error: error.message
-    })
+      error: error.message,
+    });
   }
-}
+};
 
-
-export const getUser = async (req,res)=> {
+export const getUser = async (req, res) => {
   try {
+    const { id } = req.params;
 
-    const {id} = req.params
+    const user = await User.findById(id);
 
-    const user = await User.findById(id)
-
-    if(!user){
+    if (!user) {
       return res.status(404).json({
-        message: "user not found"
-    })
+        message: "user not found",
+      });
     }
 
-    return res.status(200).json(user)
-
-    
+    return res.status(200).json(user);
   } catch (error) {
     return res.status(500).json({
       message: error.message,
     });
   }
-}
+};
+export const getAllUser = async (req, res) => {
+  try {
+    const user = await User.find();
+
+    if (!user) {
+      return res.status(404).json({
+        message: "user not found",
+      });
+    }
+
+    return res.status(200).json(user);
+  } catch (error) {
+    return res.status(500).json({
+      message: error.message,
+    });
+  }
+};
